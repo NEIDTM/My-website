@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: TechnoHideo;
+    src: url(./Fonts/techno_hideo.ttf);
+}
+
+@font-face {
+    font-family: TechnoHideoBold;
+    src: url(./Fonts/techno_hideo_bold.ttf);
+}
+
+@font-face {
+    font-family: Square;
+    src: url(./Fonts/Square.ttf);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: black;
+    margin: 0px 0px 0px;
+}
+
+.title {
+    font-family: Square;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.menu {
+    font-family: Square;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
