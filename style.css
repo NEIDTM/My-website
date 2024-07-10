@@ -1,3 +1,22 @@
+
+  /* styles for tablet devices */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+      font-size: 14px;
+      width: 90%;
+      margin: auto;
+    }
+  }
+  
+  /* styles for mobile devices */
+  @media only screen and (max-width: 767px) {
+    body {
+      font-size: 12px;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -35,11 +54,11 @@
 @keyframes animate {
     0%
     {
-        transform: translateY(-10vh) scale(0.1);
+        transform: translateY(-10vh) scale(0.08);
     }
     100%
     {
-        transform: translateY(100vh) scale(0.2);
+        transform: translateY(100vh) scale(0.08);
     }
 }
 
