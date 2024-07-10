@@ -3,6 +3,11 @@
 }
 
 @font-face {
+    font-family: Borned;
+    src: url(./Fonts/Borned.ttf);
+}
+
+@font-face {
     font-family: TechnoHideo;
     src: url(./Fonts/techno_hideo.ttf);
 }
@@ -17,6 +22,16 @@
     src: url(./Fonts/Square.ttf);
 }
 
+@font-face {
+    font-family: Snowes;
+    src: url(./Fonts/Snowes.ttf);
+}
+
+@font-face {
+    font-family: Conthrax;
+    src: url(./Fonts/Conthrax.otf);
+}
+
 @keyframes animate {
     0%
     {
@@ -26,6 +41,13 @@
     {
         transform: translateY(100vh) scale(0.05);
     }
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 body {
@@ -57,7 +79,7 @@ body {
 }
 
 .title {
-    font-family: Square;
+    font-family: Borned;
     color: white;
     display: flex;
     align-items: center;
@@ -66,9 +88,15 @@ body {
     font-size: 25px;
 }
 
-.menu {
-    font-family: Square;
+.box {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    border: 100px white
+}
+
+.box p {
+    font-family: Borned;
     color: white;
-    display: flex;
-    justify-content: center;
 }
