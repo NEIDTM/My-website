@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+    display: none;
+}
 
 @font-face {
     font-family: TechnoHideo;
@@ -14,13 +17,43 @@
     src: url(./Fonts/Square.ttf);
 }
 
-::-webkit-scrollbar {
-    display: none;
+@keyframes animate {
+    0%
+    {
+        transform: translateY(-10vh) scale(0.05);
+    }
+    100%
+    {
+        transform: translateY(100vh) scale(0.05);
+    }
 }
 
 body {
     background-color: black;
     margin: 0px 0px 0px;
+}
+
+.snow {
+    position: relative;
+    display: flex;
+}
+
+.snow span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: white;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px white,
+    0 0 50px white,
+    0 0 100px white;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(200s / var(--i));
+}
+
+.snow span:nth-child(even) {
+    background: rgb(230, 230, 230);
 }
 
 .title {
